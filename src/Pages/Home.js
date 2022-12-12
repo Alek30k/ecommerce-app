@@ -11,8 +11,8 @@ const Home = () => {
   const [productData, setProductData] = useState([]);
 
   async function getResponse() {
-    const res = await fetch("https://fakestoreapi.com/products").then((res) =>
-      res.json()
+    const res = await fetch("https://api.storerestapi.com/products").then(
+      (res) => res.json()
     );
     setProductData(await res);
   }
